@@ -1,0 +1,80 @@
+
+
+
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-Vigyan</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="icon" href="favicon1.png" type="image/gif" sizes="16x16">
+        <style type="text/css">
+            .one
+            {
+                display: none;
+            }
+            .two
+            {
+                cursor: pointer;
+            }
+        </style>
+        <script language="javascript">
+            function physics()
+            {
+                window.location = 'intro_phy.html';
+            }
+            function chemistry()
+            {
+                window.location = 'intro_chem.html';
+            }
+            function bio()
+            {
+                window.location = 'intro_bio.html';
+            }
+            function math()
+            {
+                window.location = 'intro_math.html';
+            }
+            function changeimg(x)
+            {
+                document.getElementbyId("physic").src=x;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="form">
+        <img src="wtev1.png" alt="electricity" style="position: absolute; left:300px; top: 20px">
+        <br>
+        <br>
+        <br><br><br><br><br><br>
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--<select name="subject">
+            <option name="phy" onclick="physics()">physics</option>
+            <option name="chem">chemistry</option>
+            <option name="bio">biology</option>
+            <option name="math">Mathematics</option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <!--<select name="physics" style="display: none">
+            <option name="mag" onclick="mag()">Magnetism and Electricity</option>
+            <option name="dyn">Dynamics</option>
+            <option name="heat">Heat</option>
+            <option name="light">Light</option>
+            <option name="uni">Universe</option>
+            <option name="emir">Electromagnetic Induction And Radiation</option>
+            <option name="cm">Circular Motion</option>
+        </select>-->
+        <img src="white_brd.jpg" alt="crumpled sheet" style="position: absolute; left:220px; top: 100px">
+        <img src="physics.JPG" alt="physics" style="position: absolute; left:270px; top: 150px" id="physic" onclick="physics()" onmouseover="changeimg(physics_blue.jpg)" class="two">
+        <img src="chemistry.JPG" alt="chemistry" style="position: absolute; left:270px; top: 230px" onclick="chemistry()" class="two">
+        <img src="bio.JPG" alt="chemistry" style="position: absolute; left:270px; top: 310px" onclick="bio()" class="two">
+        <img src="maths.JPG" alt="chemistry" style="position: absolute; left:270px; top: 390px" onclick="math()" class="two">
+        
+        </form>
+    </body>
+</html>
